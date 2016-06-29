@@ -23,7 +23,7 @@ public class HelloController {
 	
 	@RequestMapping("first")
 	String first(){
-		return "/WEB-INF/resources/templates/first.html";
+		return "index2";
 	}
 	
 	public static void main(String[] args) {
