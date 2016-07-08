@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
-	
+
 	@Value("${hello.rivulet}")
 	private String msg;
 
@@ -20,14 +20,10 @@ public class HelloController {
 	String home() {
 		return "Hello World222!" + msg;
 	}
-	
-	@RequestMapping("first")
-	String first(){
-		return "index2";
+
+	@RequestMapping("hello")
+	String first() {
+		return "hello";
 	}
-	
-	public static void main(String[] args) {
-		logger.info("Hello World!!!! logger");
-	}
-	
+
 }
